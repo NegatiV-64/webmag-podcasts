@@ -1,0 +1,38 @@
+.footer {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background: #111111;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left li{
+    font-size: 18px;
+}
+
+.footer__center p{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__center p svg {
+    margin: 0 5px;
+    color: #61DAFB;
+    font-size: 25px;
+}
+
+
+.footer__right {
+    display: flex;
+}
+
+.footer__right li svg {
+    font-size: 25px;
+    margin-left: 10px;
+}

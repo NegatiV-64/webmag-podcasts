@@ -1,0 +1,72 @@
+[
+    {
+        "id": "s2ep5",
+        "image": "/images/s2ep5.jpg",
+        "date": "05/12/2020",
+        "season": 2,
+        "episode": 5,
+        "title": "#7. Movies. Oscar, Best actiors, David Bowie and Tenet",
+        "description": "New episode of WebMag podcast! Since we are all stressed and busy with the finals, we decided to deflect your attention from the finals and recorded a podcast about films. During the podcast we discussed: why is Oscar dead, New York Times's list of best actors and actresses, what's wrong with the film about David Bowie, Nolan's Tenet. Enjoy and listen to our podcasts!",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-2-Episode-5.mp3"
+    },
+    {
+        "id": "s2ep4",
+        "image": "/images/s2ep4.jpg",
+        "date": "02/10/2020",
+        "season": 2,
+        "episode": 4,
+        "title": "#6. Dilobar Yavmutdinova. SGA, constitution, new commities and New Year party",
+        "description": "New Webster Podcast! We talked with Dilobar Yavmutdinova, Vice President of SGA. During the podcast, we discussed: who is a member of SGA, where is constitution, what are committees, what should we expect for New Year? Enjoy and listen to our podcast!",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-2-Episode-4.mp3"
+    },
+    {
+        "id": "s2ep3",
+        "image": "/images/s2ep3.jpg",
+        "date": "02/10/2020",
+        "season": 2,
+        "episode": 3,
+        "title": "#5. Online Education. Why online, when offline and reasons behind the decisions",
+        "description": "Hello there! Yesterday we recorded a new episode of podcast about the trending topic of the last days - keeping online education in WUT. To discuss this topic we invited Malika Baratova (PR executive officer) and Aziz Nishanov (Student Affairs Officer). We talked about: what happened in the Webster groups when the decision was announced, why did we stayed on the online education, when campus will be opened, what changes will we face in the future? Enjoy and listen to our podcast!",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-2-Episode-3.mp3"
+    },
+    {
+        "id": "s2ep2",
+        "image": "/images/s2ep2.jpg",
+        "date": "02/10/2020",
+        "season": 2,
+        "episode": 2,
+        "title": "#4. Shokhista Rakhimova. Past experience, plans and duties, Webster community",
+        "description": "Good evening! If you don't sleep, we have a special thing for you - a new episode of WebMag podcast! In this episode, we talked with a new person in the administration of Webster University in Tashkent - Shokhista Rakhimova. We discussed her past experience, her plans and duties, her first impression on Webster community and other very interesting  topics. Enjoy and listen to our podcast!",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-2-Episode-2.mp3"
+    },
+    {
+        "id": "s2ep1",
+        "image": "/images/s2ep1.jpg",
+        "date": "20/08/2020",
+        "season": 2,
+        "episode": 1,
+        "title": "#3. New Students. Why Webster University, start of the semester, expectations and nostalgia",
+        "description": "We expect that you are doing well on last week of our summer vacations and we hope that you have prepared for the start of new semester in our University. In order to greet new students, we recorded a podcast with some new students of Webster University and we hope that it will be interesting for both newcomers and old students of our University. We discussed why they choose Webster, what they expect and we shared with some nostalgic stories about our first year. Enjoy and listen to our podcast!",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-2-Episode-1.mp3"
+    },
+    {
+        "id": "s1ep2",
+        "image": "/images/podcast.png",
+        "date": "06/04/2020",
+        "season": 1,
+        "episode": 2,
+        "title": "#2. Aziz Nishanov. SGA elections, position of Students Affairs officer and BadComedian",
+        "description": "We hope that you are doing well on quarantine and if you are bored we recorded a new podcast with our new guest - Aziz Nishanov, Student's affairs officer. We talked about the future SGA elections and why it is beneficial to participate in them, how Aziz Nishanov got his place in Webster University and of course what he is doing on quarantine! Enjoy and listen to our podcast! (Now with a better audio quality)",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-1-Episode-0.2.mp3"
+    },
+    {
+        "id": "s1ep1",
+        "image": "/images/podcast.png",
+        "date": "30/03/2020",
+        "season": 1,
+        "episode": 1,
+        "title": "#1. WebMag podcast start. Malika Baratova, favourite interests and sound cracking",
+        "description": "We are launching Webster Magazine Podcasts! It is our pilot episode with the Webster University PR officer - Malika Baratova. We talked about the new world order, her life and Webster University.",
+        "audio": "http://blog.team64.uz/wp-content/uploads/2021/09/WebMag-Podcasts-Season-1-Episode-0.1.mp3"
+    }
+]

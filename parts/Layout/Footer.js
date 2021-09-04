@@ -16,8 +16,8 @@ const Footer = () => {
                     <p>Developed with <DiReact/> by Bektemirov Aziz</p>
                 </div>
                 <ul className={styles.footer__right}>
-                    <li><a href="#!"><FaTelegram /></a></li>
-                    <li><a href="#!"><FaInstagram /></a></li>
+                    <li><a href="https://t.me/thewebmag"><FaTelegram /></a></li>
+                    <li><a href="https://www.instagram.com/thewebmag/"><FaInstagram /></a></li>
                     <li><a href="#!"><FaYandex /></a></li>
                 </ul>
             </Container>

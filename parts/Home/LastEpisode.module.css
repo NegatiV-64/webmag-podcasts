@@ -1,0 +1,37 @@
+.lastEpisode__container {
+    background: var(--baseDarkGrey);
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 35px 30px;
+}
+
+.lastEpisode__image {
+    width: 55%;
+    border-radius: 10px;
+}
+
+.lastEpisode__content {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lastEpisode__content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.lastEpisode__content h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.lastEpisode__buttonWrapper {
+    margin-top: auto;
+}
+
+.lastEpisode__buttonWrapper a {
+    text-transform: uppercase;
+    font-size: 18px;
+}

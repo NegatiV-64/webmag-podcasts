@@ -1,36 +1,14 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useContext, useRef } from 'react';
 import Main from '../Common/Main';
-import Container from '../Common/Container';
 import styles from './Home.module.css'
 import LastEpisode from './LastEpisode';
+import HomePodcastList from './HomePodcastList';
+import PodcastContext from '../../context/podcast-context';
 
 const Home = (props) => {
 
-    const [podcastData, setPodcastData] = useState([]);
-    const [loadingState, setLoadingState] = useState(false);
-    const [errorState, setErrorState] = useState(false);
-
-    const fetchingData = useCallback(
-        async () => {
-            setLoadingState(true)
-            try {
-                const response = await fetch("./podcastData.json")
-                if (!response.ok) {
-                    throw new Error("Something went wrong")
-                }
-                const data = await response.json();
-                setPodcastData(data);
-            } catch (error) {
-                setErrorState(true);
-            }
-            setLoadingState(false)
-        },
-        [],
-    )
-
-    useEffect(() => {
-        fetchingData();
-    }, [fetchingData]);
+    const contextPodcast = useContext(PodcastContext);
+    const podcastData = contextPodcast.podcasts
 
     if (podcastData.length > 0) {
         return (
@@ -47,7 +25,9 @@ const Home = (props) => {
                         audio={podcastData[0].audio}
                     />
                 </section>
-                <section></section>
+                <section>
+                    <HomePodcastList podcasts={podcastData.filter((item, index) => index > 0)} />
+                </section>
             </Main>
         );
     }

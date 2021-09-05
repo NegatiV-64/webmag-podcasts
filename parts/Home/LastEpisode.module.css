@@ -1,9 +1,15 @@
 .lastEpisode__container {
-    background: var(--baseDarkGrey);
     display: flex;
     justify-content: center;
+
+}
+
+.lastEpisode__wrapper {
     border-radius: 25px;
+    background: var(--baseDarkGrey);
     padding: 35px 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .lastEpisode__image {

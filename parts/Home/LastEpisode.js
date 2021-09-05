@@ -11,15 +11,17 @@ const LastEpisode = (props) => {
 
     return (
         <Container className={styles.lastEpisode__container}>
-            <img
-                className={styles.lastEpisode__image}
-                src={`${image}`}
-                alt={title}
-            />
-            <div className={styles.lastEpisode__content}>
-                <p>Last episode</p>
-                <h2>{title}</h2>
-                <LinkWrapper className={styles.lastEpisode__buttonWrapper} href={`podcasts/${id}`}>Listen now</LinkWrapper>
+            <div className={styles.lastEpisode__wrapper}>
+                <img
+                    className={styles.lastEpisode__image}
+                    src={`${image}`}
+                    alt={title}
+                />
+                <div className={styles.lastEpisode__content}>
+                    <p>Last episode</p>
+                    <h2>{title}</h2>
+                    <LinkWrapper className={styles.lastEpisode__buttonWrapper} href={`podcasts/${id}`}>Listen now</LinkWrapper>
+                </div>
             </div>
         </Container>
     );

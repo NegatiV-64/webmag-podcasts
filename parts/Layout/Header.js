@@ -10,11 +10,13 @@ const Header = () => {
         <header className={styles.header}>
             <nav className={styles.nav}>
                 <Container className={styles.nav__container}>
-                    <a className={styles.nav__logo} href="#!">
-                        <HiMicrophone />
-                        Webster Magazine 
-                        Podcast
-                    </a>
+                    <Link passHref href="/">
+                        <a className={styles.nav__logo}>
+                            <HiMicrophone />
+                            Webster Magazine
+                            Podcast
+                        </a>
+                    </Link>
                     <ul className={styles.nav__list}>
                         <li>
                             <Link href="/">Home</Link>

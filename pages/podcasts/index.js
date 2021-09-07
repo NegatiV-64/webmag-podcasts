@@ -1,7 +1,8 @@
 import React from 'react';
 import Head from 'next/head'
+import Podcasts from '../../parts/Podcasts/Podcasts';
 
-const index = () => {
+const PodcastsListPage = () => {
     return (
         <>
             <Head>
@@ -10,10 +11,10 @@ const index = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <section>
-                <h1>Podcasts</h1>
+                <Podcasts />
             </section>
         </>
     );
 }
 
-export default index;
+export default PodcastsListPage;

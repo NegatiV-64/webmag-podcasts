@@ -7,8 +7,6 @@ const PodcastsListPage = () => {
         <>
             <Head>
                 <title>Podcasts - WebMag Podcasts</title>
-                <meta name="description" content="WebMag podcasts platform. Listen to us on the website, Yandex.Music or Google.Podcast" />
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <section>
                 <Podcasts />

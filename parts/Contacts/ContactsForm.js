@@ -4,7 +4,6 @@ import styles from './ContactsForm.module.css'
 import ContactsFormTextArea from './ContactsFormTextArea';
 
 const ContactsForm = () => {
-
     const [userName, setUserState] = useState("");
     const [userEmail, setUserEmail] = useState("");
     const [userMsg, setUserMsg] = useState("")
@@ -26,12 +25,10 @@ const ContactsForm = () => {
                 "Content-Type": "application/json"
             }
         })
-            .then(res => res.json())
-            .then(data => console.log(data))
 
-        // setUserState("");
-        // setUserEmail("");
-        // setUserMsg("")
+        setUserState("");
+        setUserEmail("");
+        setUserMsg("")
     }
 
     return (

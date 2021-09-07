@@ -8,7 +8,13 @@ const Loading = () => {
     });
 
     return (
-        <div className={styles.loadingWrapper}>
+        <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            width: "100vw",
+        }} className={styles.loadingWrapper}>
             <div {...containerProps}>
                 {indicatorEl}
             </div>

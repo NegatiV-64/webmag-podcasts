@@ -1,10 +1,17 @@
 import React from 'react';
+import Head from 'next/head'
+import Contacts from '../../parts/Contacts/Contacts';
 
 const ContactsPage = () => {
     return (
-        <div>
-            <h1>Contacts</h1>
-        </div>
+        <>
+            <Head>
+                <title>Contacts - WebMag Podcasts</title>
+            </Head>
+            <section>
+                <Contacts />
+            </section>
+        </>
     );
 }
 

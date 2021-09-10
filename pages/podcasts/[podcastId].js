@@ -1,18 +1,18 @@
 import React from 'react';
-import { useRouter } from 'next/router'
-
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import SinglePodcast from '../../parts/SinglePodcast/SinglePodcast';
 
 const Podcast = () => {
-
     const router = useRouter();
-    console.log(router);
-
-    const {podcastId} = router.query
+    const { podcastId } = router.query;
 
     return (
-        <div>
-            Podcast: {podcastId}
-        </div>
+        <React.Fragment>
+            <section>
+                <SinglePodcast  podcastId={podcastId} />
+            </section>
+        </React.Fragment>
     );
 }
 

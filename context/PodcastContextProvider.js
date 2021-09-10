@@ -12,16 +12,15 @@ const PodcastContextProvider = (props) => {
         async () => {
             setLoadingState(true)
             try {
-                const response = await fetch("./podcastData.json")
+                const response = await fetch("/api/podcastsFetch")
                 if (!response.ok) {
                     throw new Error("Something went wrong")
                 }
                 const data = await response.json();
 
                 if (mounted.current) {
-                    setPodcastData(data);
+                    setPodcastData(data.message);
                 }
-
             } catch (error) {
                 setErrorState(true);
             }

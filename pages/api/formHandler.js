@@ -1,5 +1,4 @@
 const formHandler = (req, res) => {
-
     if (req.method === "POST") {
         const message = req.body.message;
 
@@ -22,7 +21,6 @@ const formHandler = (req, res) => {
 
         res.status(200).json({ message: "Success!" })
     }
-
 }
 
 export default formHandler

@@ -42,10 +42,7 @@ const SinglePodcast = (props) => {
                             <button onClick={onListenBtnHandler}>Listen</button>
                         </div>
                     </div>
-
-                    {audioPlayerShow &&
-                        <AudioPlayer audio={audio} />
-                    }
+                    <AudioPlayer isShows={audioPlayerShow} audio={audio} />
                 </Container>
             </>
         );

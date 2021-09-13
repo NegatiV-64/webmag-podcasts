@@ -3,7 +3,7 @@ import styles from './AudioPlayer.module.css'
 import { MdVolumeUp, MdReplay10, MdForward30, MdPause, MdPlayArrow } from 'react-icons/md'
 
 const AudioPlayer = (props) => {
-    const classes = `${styles.podcastPlayer}`
+    const classes = props.isShows ? `${styles.podcastPlayer}` : `${styles.podcastPlayer} ${styles.podcastPlayer__hide}`
     const audioTrackRef = useRef();
     const audioTrackProgressWrapper = useRef();
     const [isPlay, setIsPlay] = useState(false);
@@ -60,7 +60,7 @@ const AudioPlayer = (props) => {
     }
 
     return (
-        <div className={styles.podcastPlayer}>
+        <div className={classes}>
             <audio onEnded={onAudioEndHandler} onTimeUpdate={onCurrentTimeChangeHandler} onLoadedMetadata={onAudioLoadedMetadata} ref={audioTrackRef} src={props.audio}></audio>
             <div
                 onClick={onProgressBarClickHanlder}

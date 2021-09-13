@@ -19,7 +19,8 @@
 
 .podcastPlayer__progressBarFill {
     position: relative;
-    width: 40%;
+    /* width: 40%; */
+    /* transition: 0.2s; */
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;

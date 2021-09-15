@@ -10,6 +10,7 @@ const AudioPlayer = (props) => {
     const [podcastDuration, setPodcastDuration] = useState("00:00");
     const [podcastCurrentTime, setPodcastCurrentTime] = useState("00:00");
     const [barWidth, setBarWidth] = useState("0");
+    const [volumeState, setVolumeState] = useState("100");
 
     const audioTimeConverted = (time) => {
         const tempMinutes = Math.floor(time / 60);
@@ -19,13 +20,13 @@ const AudioPlayer = (props) => {
         return `${minutes}:${seconds}`;
     };
 
-    function onReplayButtonClickHandler (e) {
+    function onReplayButtonClickHandler(e) {
         e.preventDefault();
-        audioTrackRef.current.currentTime -=15
+        audioTrackRef.current.currentTime -= 15
     }
-    function onForwardButtonClickHandler (e) {
+    function onForwardButtonClickHandler(e) {
         e.preventDefault();
-        audioTrackRef.current.currentTime +=30
+        audioTrackRef.current.currentTime += 30
     }
 
     function onProgressBarClickHanlder(e) {
@@ -55,8 +56,21 @@ const AudioPlayer = (props) => {
         setBarWidth(audioBarWidth);
     }
 
-    function onAudioEndHandler () {
+    function onAudioEndHandler() {
         setIsPlay(false);
+    }
+
+    function onVolumeChangeHandler(e) {
+        setVolumeState(e.target.value);
+
+        if (volumeState < 5) {
+            audioTrackRef.current.volume = 0;
+        } else if (volumeState > 95) {
+            audioTrackRef.current.volume = 1;
+        }
+        else {
+            audioTrackRef.current.volume = +volumeState / 100;
+        }
     }
 
     return (
@@ -75,9 +89,17 @@ const AudioPlayer = (props) => {
             </div>
             <div className={styles.podcastPlayer__controls}>
                 <div className={styles.podcastPlayer__volumeAndTime}>
-                    <button className={styles.podcastPlayer__volume}>
-                        <MdVolumeUp />
-                    </button>
+                    <div className={styles.podcastPlayer__volumeWrapper}>
+                        <button className={styles.podcastPlayer__volume}>
+                            <MdVolumeUp />
+                        </button>
+                        <input
+                            min="0" max="100"
+                            step="1"
+                            onChange={onVolumeChangeHandler}
+                            type="range"
+                            value={volumeState} />
+                    </div>
                     <div className={styles.podcastPlayer__time}>
                         <p>{podcastCurrentTime}</p>
                         <span>/</span>

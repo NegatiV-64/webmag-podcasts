@@ -9,7 +9,7 @@
 
 .podcastPlayer__hide {
     position: absolute;
-    z-index: -1 ;
+    z-index: -1;
     opacity: 0;
 }
 
@@ -93,4 +93,8 @@
 
 .podcastPlayer__playPause {
     margin: 0 5px;
+}
+
+.podcastPlayer__volumeWrapper {
+    display: flex;
 }

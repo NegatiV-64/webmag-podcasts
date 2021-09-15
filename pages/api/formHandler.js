@@ -5,11 +5,11 @@ const formHandler = (req, res) => {
         const telegramText = `New Message from Webster Podcast!\nFrom: ${message.name}\nEmail: ${message.email}\nMessage: ${message.message}`
 
         fetch(
-            "https://api.telegram.org/bot1704742052:AAFQxq3mx9MDZrna356tEiwzf37FkvzbiZE/sendMessage",
+            "There should be telegram API",
             {
                 method: "POST",
                 body: JSON.stringify({
-                    chat_id: "71474323",
+                    chat_id: "Chat ID",
                     text: telegramText,
                     parse_mode: "markdown"
                 }),

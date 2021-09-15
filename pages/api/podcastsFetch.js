@@ -1,5 +1,5 @@
 const podcastFetch = (req, res) => {
-    fetch("http://localhost:3000/podcastData.json")
+    fetch("https://webmag-podcast.vercel.app/podcastData.json")
         .then(r => r.json())
         .then(data =>
             res.status(200).json({

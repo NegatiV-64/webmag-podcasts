@@ -50,3 +50,17 @@
     font-size: 70px;
     margin: 0 20px;
 }
+
+@media (max-width: 576px) {
+    .aboutContent {
+        flex-direction: column;
+    }
+    .aboutContent__imageWrapper {
+        width: 100%;
+    }
+    .aboutContent__text {
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useCallback, useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 import Main from '../Common/Main';
 import styles from './Home.module.css'
 import LastEpisode from './LastEpisode';
 import HomePodcastList from './HomePodcastList';
 import PodcastContext from '../../context/podcast-context';
+import Loading from '../Common/Loading';
 
-const Home = (props) => {
-
+const Home = () => {
     const contextPodcast = useContext(PodcastContext);
     const podcastData = contextPodcast.podcasts
 
@@ -35,7 +35,7 @@ const Home = (props) => {
     return (
         <Main>
             <section className={styles.lastEpidsode}>
-                <h1>Not a Last episode</h1>
+                <Loading />
             </section>
         </Main>
     );

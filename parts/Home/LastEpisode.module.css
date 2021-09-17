@@ -41,3 +41,33 @@
     text-transform: uppercase;
     font-size: 18px;
 }
+
+@media (max-width: 576px) {
+    .lastEpisode__wrapper {
+        flex-direction: column;
+    }
+
+    .lastEpisode__image {
+        width: 100%;
+    }
+
+    .lastEpisode__content {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .lastEpisode__content p {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .lastEpisode__content h2 {
+       font-size: 28px;
+       text-align: center;
+    }
+    .lastEpisode__buttonWrapper {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .lastEpisode__buttonWrapper a {
+        font-size: 16px;
+    }
+}

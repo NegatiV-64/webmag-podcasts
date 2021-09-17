@@ -37,3 +37,24 @@
     justify-content: center;
     text-transform: uppercase;
 }
+
+@media (max-width: 576px) {
+    .podcastItem {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .podcastItem img {
+        max-width: 100%;
+    }
+
+    .podcastItem__content {
+text-align: center;
+    }
+    .podcastItem__content h5 {
+        margin-top: 10px;
+    }
+    .podcastItem__content p {
+        margin: 10px 0;
+    }
+}

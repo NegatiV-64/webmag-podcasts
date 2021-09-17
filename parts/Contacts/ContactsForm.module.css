@@ -52,3 +52,9 @@
     cursor: pointer;
     color: var(--baseWhite);
 }
+
+@media (max-width: 576px) {
+    .aboutFormWrapper {
+        width: 100%;
+    }
+}

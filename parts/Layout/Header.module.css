@@ -30,3 +30,57 @@
     font-size: 22px;
     margin-left: 30px;
 }
+
+.mobileBtn {
+    display: flex;
+    outline: none;
+    background: none;
+    color: white;
+    border: none;
+    align-items: center;
+    font-size: 35px;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+.mobileMenuWrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: #252525;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.mobileMenuWrapper_active {
+    top: 0;
+    z-index: 2;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.mobileList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileList li a {
+    font-size: 40px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+@media (max-width: 576px) {
+    .nav__logo {
+        font-size: 21px;
+        max-width: 245px;
+    }
+}

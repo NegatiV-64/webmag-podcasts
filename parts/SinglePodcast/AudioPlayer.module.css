@@ -98,3 +98,11 @@
 .podcastPlayer__volumeWrapper {
     display: flex;
 }
+
+@media (max-width: 576px) {
+    .podcastPlayer__volumeAndTime {
+        flex-direction: column-reverse;
+        margin: 12px 0;
+        gap: 10px;
+    }
+}

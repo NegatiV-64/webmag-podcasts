@@ -51,3 +51,20 @@
     width: fit-content;
     margin-bottom: 10px;
 }
+
+@media (max-width: 576px) {
+    .podcastContentWrapper {
+        flex-direction: column;
+    }
+    .podcastContentWrapper__imageWrapper {
+        width: 100%;
+        margin-right: 0;
+    }
+    .podcastContentWrapper__contentWrapper {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}

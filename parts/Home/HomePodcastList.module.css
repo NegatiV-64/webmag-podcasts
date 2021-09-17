@@ -4,3 +4,9 @@
     justify-content: center;
     margin: 0 -30px;
 }
+
+@media (max-width: 576px) {
+    .podcasts__container ul {
+        margin: 0;
+    }
+}
